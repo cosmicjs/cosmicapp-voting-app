@@ -103,7 +103,7 @@ export default class App extends Component {
       <div style={ S('p-20 pt-0 font-16') }>
         <h1 style={ S('mb-10') }>Voting App</h1>
         <div>
-          <div><iframe style={ S('border-none mt-10') } frameBorder="0" src="https://ghbtns.com/github-btn.html?user=tonyspiro&repo=easy-mobx-example&type=star&count=true" scrolling="0" width="160px" height="30px"></iframe></div>
+          <div><iframe style={ S('border-none mt-10') } frameBorder="0" src="https://ghbtns.com/github-btn.html?user=cosmicjs&repo=cosmicapp-voting-app&type=star&count=true" scrolling="0" width="160px" height="30px"></iframe></div>
           <div style={ S('mb-20') }>
             Share:
             &nbsp;&nbsp;
