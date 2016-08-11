@@ -14,7 +14,11 @@ export default class PollList extends Component {
             data.polls.map((poll, i) => {
               return (
                 <li onClick={ this.handlePollClick.bind(this, poll.slug) } style={ S('p-30 pointer') } className="list-group-item" key={ `poll-${i}` }>
-                  <a href={ poll.slug }>{ poll.title }</a>
+                  <a href={ poll.slug }>
+                    <i className="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    &nbsp;&nbsp;&nbsp;
+                    { poll.title }
+                  </a>
                   <div style={ S('pull-right') }>Total votes: { poll.num_votes }</div>
                 </li>
               )
