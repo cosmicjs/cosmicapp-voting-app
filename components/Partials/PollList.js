@@ -8,7 +8,7 @@ export default class PollList extends Component {
     const data = this.props.data
     return (
       <div style={ S('font-16') }>
-        <h2>Polls Home</h2>
+        <h2 style={ S('mt-0') }>Polls Home</h2>
         <ul className="list-group">
           {
             data.polls.map((poll, i) => {
