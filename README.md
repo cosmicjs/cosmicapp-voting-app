@@ -20,9 +20,9 @@ npm start
 open http://localhost:3000
 ```
 ###Create Your Own Poll
-It's easy to create your own polls.  All you have to do is:
-1. Create a bucket on Cosmic JS.
-2. Import the `bucket.json` file into your empty bucket.
+It's easy to create your own polls.  All you have to do is:<br>
+1. Create a bucket on Cosmic JS.<br>
+2. Import the `bucket.json` file into your empty bucket.<br>
 3. Find your bucket slug in your bucket settings
 #####Run in production connected to your bucket
 ```
