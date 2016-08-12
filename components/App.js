@@ -103,7 +103,10 @@ export default class App extends Component {
       <div style={ S('p-20 pt-0 font-16') }>
         <h1 style={ S('pull-left mb-0 w-50p') }>Voting App</h1>
         <div style={ S('pull-right w-300 text-right') }>
-          <div style={ S('mt-10') }>
+          <div style={ S('mb-10') }>
+            Fork:&nbsp;&nbsp;<iframe style={ S('border-none relative t-13') } frameBorder="0" src="https://ghbtns.com/github-btn.html?user=cosmicjs&repo=cosmicapp-voting-app&type=star&count=true" scrolling="0" width="100px" height="30px"></iframe>
+          </div>
+          <div style={ S('mb-10') }>
             Share:
             &nbsp;&nbsp;
             <a style={ { textDecoration: 'none' } } href={ `https://www.facebook.com/sharer/sharer.php?u=${window.location.href}` } target="_blank">
@@ -116,9 +119,6 @@ export default class App extends Component {
               <i className="fa fa-twitter"></i>
               &nbsp;&nbsp;Twitter
             </a>
-          </div>
-          <div style={ S('mb-20') }>
-            Fork:&nbsp;&nbsp;<iframe style={ S('border-none relative t-13') } frameBorder="0" src="https://ghbtns.com/github-btn.html?user=cosmicjs&repo=cosmicapp-voting-app&type=star&count=true" scrolling="0" width="100px" height="30px"></iframe>
           </div>
         </div>
         <div className="clearfix"></div>
