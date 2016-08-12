@@ -103,7 +103,7 @@ export default class App extends Component {
       <div style={ S('p-20 pt-0 font-16') }>
         <h1 style={ S('pull-left mb-0 w-50p') }>Voting App</h1>
         <div style={ S('pull-right w-300 text-right') }>
-          <div style={ S('mb-10') }>
+          <div style={ S('mb-15') }>
             Fork:&nbsp;&nbsp;<iframe style={ S('border-none relative t-13') } frameBorder="0" src="https://ghbtns.com/github-btn.html?user=cosmicjs&repo=cosmicapp-voting-app&type=star&count=true" scrolling="0" width="80px" height="30px"></iframe>
           </div>
           <div style={ S('mb-10') }>
