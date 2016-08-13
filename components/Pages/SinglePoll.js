@@ -187,10 +187,12 @@ export default class SinglePoll extends Component {
     }
     return (
       <div style={ S('p-20 pt-0 font-16') }>
-        <Header data={data}/>
-          { nav_area }
-          { main_area }
-        <Footer data={data}/>
+        <div className="container">
+          <Header data={data}/>
+            { nav_area }
+            { main_area }
+          <Footer data={data}/>
+        </div>
       </div>
     )
   }
