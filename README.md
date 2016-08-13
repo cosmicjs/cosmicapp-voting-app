@@ -1,6 +1,6 @@
 Voting App
 =====================
-This is an example voting app that uses [React](https://facebook.github.io/react) for UI, [MobX](https://mobxjs.github.io/mobx) for state management, [Cosmic JS](https://cosmicjs.com) for the [CMS API](https://cosmicjs.com) and [Shorti](https://www.npmjs.com/package/shorti) for easy inline styles.  View the [demo here](http://voting-app.cosmicapp.co/).
+This is an example voting app that uses [React](https://facebook.github.io/react) for UI, [MobX](https://mobxjs.github.io/mobx) for state management, [React Router](https://github.com/reactjs/react-router) for smooth view transitions, [Cosmic JS](https://cosmicjs.com) for the [CMS API](https://cosmicjs.com) and [Shorti](https://www.npmjs.com/package/shorti) for easy inline styles.  View the [demo here](http://voting-app.cosmicapp.co/).
 
 ###Getting started
 ```
