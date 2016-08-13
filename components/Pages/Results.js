@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
+import { observer } from 'mobx-react'
 import { Nav, NavItem, ProgressBar } from 'react-bootstrap'
 import S from 'shorti'
 import _ from 'lodash'
+
+@observer
 export default class Results extends Component {
   render() {
     const data = this.props.data
     const options = data.poll.metafields
-    const votes = data.votes
+    let votes = data.votes
+    votes = votes.filter(vote => {
+      return vote.metafield.poll_id.value === data.poll._id
+    })
     const total_votes = votes.length
     return (
       <div style={ S('font-16') }>
-        <Nav bsStyle="pills" style={ S('mb-20') }>
-          <NavItem onClick={ this.props.goHome } title="Home"><span className="fa fa-home"></span>&nbsp;&nbsp;Polls Home</NavItem>
-          <NavItem onClick={ this.props.hideResults } title="Back to poll"><span className="fa fa-arrow-left"></span>&nbsp;&nbsp;Back to poll</NavItem>
-        </Nav>
         <div className="panel panel-primary">
           <div className="panel-heading">
             <h3 className="panel-title">

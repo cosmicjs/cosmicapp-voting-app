@@ -1,13 +1,18 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import { AppContainer } from 'react-hot-loader'
-import AppState from './AppState'
 import App from './App'
-
-const data = new AppState()
+import SinglePoll from './Pages/SinglePoll'
+import PollList from './Pages/PollList'
 render(
   <AppContainer>
-    <App data={data} />
+    <Router history={browserHistory}>
+      <Route path="/" component={App}>
+        <Route path="/:poll" component={SinglePoll}/>
+        <IndexRoute component={PollList}/>
+      </Route>
+    </Router>
   </AppContainer>,
   document.getElementById('root')
 )
@@ -16,7 +21,12 @@ if (process.env.NODE_ENV !== 'production' && module.hot) {
     const NextApp = require('./App').default
     render(
       <AppContainer>
-        <NextApp data={data} />
+        <Router history={browserHistory}>
+          <Route path="/" component={NextApp}>
+            <Route path="/:poll" component={SinglePoll}/>
+            <IndexRoute component={PollList}/>
+          </Route>
+        </Router>
       </AppContainer>,
       document.getElementById('root')
     )
