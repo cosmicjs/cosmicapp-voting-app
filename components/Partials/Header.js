@@ -28,7 +28,7 @@ export default class Header extends Component {
           </div>
         </div>
         <div className="clearfix"></div>
-        <div style={ S('pull-right mt-10') }>
+        <div style={ S('pull-right') }>
           <a style={ { textDecoration: 'none' } } href="https://cosmicjs.com" target="_blank">
             <img style={ S('mr-10') } className="pull-left" src="https://cosmicjs.com/images/logo.svg" width="28" height="28" />
             <span style={ S('color-666 t-3 relative') }>Proudly powered by Cosmic JS</span>
