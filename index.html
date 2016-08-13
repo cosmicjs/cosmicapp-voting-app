@@ -33,6 +33,19 @@
       .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
         background-color: #29ABE2;
       }
+      .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 28px;
+        height: 28px;
+        -webkit-animation:spin 1500ms linear infinite;
+        -moz-animation:spin 1500ms linear infinite;
+        animation:spin 1500ms linear infinite;
+      }
+      @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
     </style>
     <link rel="icon" type="image/png" href="https://cosmicjs.com/images/favicons/favicon-196x196.png" sizes="196x196" />
     <link rel="icon" type="image/png" href="https://cosmicjs.com/images/favicons/favicon-96x96.png" sizes="96x96" />

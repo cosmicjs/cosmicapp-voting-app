@@ -86,7 +86,7 @@ export default class SinglePoll extends Component {
     }
     if (!data.poll._id) {
       return (
-        <div style={ S('text-center mt-50') }>
+        <div className="loading">
           <img src="https://cosmicjs.com/images/logo.svg" width="28" height="28" />
         </div>
       )
