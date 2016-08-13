@@ -100,7 +100,7 @@ export default class SinglePoll extends Component {
       if (poll_option.children && poll_option.children[0].value) {
         has_image = true
         option_image = (
-          <div style={ S(`absolute l-0 t-0 bg-url(https://cosmicjs.imgix.net/${poll_option.children[0].value}?w=240) bg-cover bg-center w-120 h-120 pull-left mr-20`) }/>
+          <div style={ S(`absolute l-0 t-0 bg-url(https://cosmicjs.imgix.net/${poll_option.children[0].value}?w=240) bg-cover bg-center w-104 h-104 pull-left mr-20`) }/>
         )
       }
       return (
