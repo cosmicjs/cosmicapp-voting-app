@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 import S from 'shorti'
 import _ from 'lodash'
 import { observer } from 'mobx-react'
-import Results from './Results'
+import Results from '../Partials/Results'
 import Header from '../Partials/Header'
 import Footer from '../Partials/Footer'
 import slug from 'slug'
@@ -186,13 +186,11 @@ export default class SinglePoll extends Component {
       )
     }
     return (
-      <div style={ S('p-20 pt-0 font-16') }>
-        <div className="container">
-          <Header data={data}/>
-            { nav_area }
-            { main_area }
-          <Footer data={data}/>
-        </div>
+      <div className="container">
+        <Header data={data}/>
+          { nav_area }
+          { main_area }
+        <Footer data={data}/>
       </div>
     )
   }

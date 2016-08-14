@@ -36,14 +36,12 @@ export default class PollList extends Component {
       )
     }
     return (
-      <div style={ S('p-20 pt-0 font-16') }>
-        <div className="container">
-          <Header data={data}/>
-          <div style={ S('font-16') }>
-            { list_area }
-          </div>
-          <Footer data={data}/>
+      <div className="container">
+        <Header data={data}/>
+        <div style={ S('font-16') }>
+          { list_area }
         </div>
+        <Footer data={data}/>
       </div>
     )
   }
