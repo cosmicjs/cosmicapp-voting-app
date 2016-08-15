@@ -34,6 +34,8 @@ export default class AppState {
         // Redo totals
         let polls = res.objects.type.polls
         polls = this.getVoteTotals(polls, votes)
+        const poll_index = _.findIndex(this.polls, { _id: this.poll._id })
+        polls[poll_index].vote_counted = true
         this.polls = polls
       }
     })
@@ -75,8 +77,6 @@ export default class AppState {
         const slug = window.location.pathname.replace('/', '')
         if (slug) {
           const poll = _.find(res.objects.type.polls, { slug })
-          // Remove vote for testing
-          // this.removeVoteCount()
           if (!poll) {
             console.log('not found')
             this.not_found = true
@@ -84,6 +84,8 @@ export default class AppState {
           }
           this.poll = poll
         }
+        // Remove vote for testing
+        this.removeVoteCount()
       }
     })
   }
