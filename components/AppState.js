@@ -85,7 +85,7 @@ export default class AppState {
           this.poll = poll
         }
         // Remove vote for testing
-        this.removeVoteCount()
+        // this.removeVoteCount()
       }
     })
   }
