@@ -19,7 +19,7 @@ open http://localhost:3000
 npm start
 open http://localhost:3000
 ```
-###Create Your Own Poll
+###Create Your Own Polls
 It's easy to create your own polls.  All you have to do is:<br>
 1. Create a bucket on Cosmic JS.<br>
 2. Find the Voting App in the Apps section of your bucket.<br>
