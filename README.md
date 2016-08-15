@@ -23,7 +23,7 @@ open http://localhost:3000
 It's easy to create your own polls.  All you have to do is:<br>
 1. Create a bucket on Cosmic JS.<br>
 2. Find the Voting App in the Apps section of your bucket.<br>
-3. Install the voting all.<br>
+3. Install the voting app.<br>
 4. Deploy your app to the web
 #####Run in production connected to your bucket
 ```
